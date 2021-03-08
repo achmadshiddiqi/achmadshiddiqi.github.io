@@ -25,6 +25,10 @@
 	margin-top: 20px;
 }
 
+span {
+	display: inline;
+	color: #2EB667;
+}
 
 /* CSS KONTEN */
 
@@ -79,11 +83,6 @@
 	line-height: 60px;
 }
 
-.jumbotron .intro span {
-	display: inline;
-	color: #2EB667;
-}
-
 .jumbotron .intro p {
 	width: 460px;
 	font-size: 18px;
@@ -95,11 +94,6 @@
 
 
 /* Konten */
-.welcome h3 span {
-	display: inline;
-	color: #2EB667;
-}
-
 .welcome p {
 	font-family: Poppins;
 	font-size: 16px;
@@ -171,10 +165,6 @@
 
 .footer h5 {
 	font-size: 24px;
-}
-
-.footer h5 span {
-	color: #2EB667;
 }
 
 .footer .tutup {
