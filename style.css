@@ -1,0 +1,211 @@
+ Body */
+.body {
+	width: 1440px;
+}
+
+/* Tombol */
+.tombol {
+	background-color: #2EB667;
+	text-transform: uppercase;
+	font-size: 14px;
+}
+
+/* Judul */
+.judul {
+	font-family: Poppins;
+	font-size: 28px;
+}
+
+.judul::after {
+	content: '';
+	display: block;
+	border-bottom: 7px solid #2EB667;
+	border-radius: 4px;
+	width: 50px;
+	margin-top: 20px;
+}
+
+
+/* CSS KONTEN */
+
+/* Navbar */
+.navbar {
+	height: 62px;
+	box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.3);
+	position: relative;
+	z-index: 1;
+}
+
+.atas {
+	margin-right: 45px;
+	font-family: Poppins;
+	font-size: 14px;
+	color: black !important;
+}
+
+.navbar-nav .nav-link:hover {
+	color: #2EB667 !important;
+}
+
+.nav-link:hover::after {
+	content: '';
+	display: block;
+	border-bottom: 3px solid #2EB667;
+	border-radius: 3px !important;
+	width: 25px;
+	margin: auto;
+	margin-top: 10px;
+	margin-bottom: -13px;
+	color: #2EB667 !important;
+}
+
+
+/* Jumbotron */
+.jumbotron {
+	height: 730px;
+	background-image: url(img/BG.png);
+	background-size: cover;
+	position: relative;
+}
+
+.jumbotron .container {
+	position: relative;
+	z-index: 1;
+}
+
+.jumbotron .intro h1 {
+	font-family: Poppins;
+	font-size: 40px;
+	line-height: 60px;
+}
+
+.jumbotron .intro span {
+	display: inline;
+	color: #2EB667;
+}
+
+.jumbotron .intro p {
+	width: 460px;
+	font-size: 18px;
+	font-weight: 300;
+	text-align: justify;
+	line-height: 27px;
+	margin: 30px 0px;
+}
+
+
+/* Konten */
+.welcome h3 span {
+	display: inline;
+	color: #2EB667;
+}
+
+.welcome p {
+	font-family: Poppins;
+	font-size: 16px;
+	font-weight: 300;
+	text-align: justify;
+	margin: 30px 0;
+	line-height: 40px;
+}
+
+.keunggulan .title {
+	margin-top: 111px;
+	position: relative;
+}
+
+.gambar {
+	margin-top: 58px; 
+}
+
+.keunggulan .i1{
+	width: 264px;
+	height: 184px;
+	margin: auto;
+}
+
+.keunggulan .i2{
+	width: 230px;
+	height: 184px;
+	margin: auto;
+}
+
+.keunggulan .i3{
+	width: 220px;
+	height: 184px;
+	margin: auto;
+}
+
+.keunggulan .card-title {
+	font-family: Poppins;
+	font-size: 20px
+	margin: 30px 0;
+}
+
+.keunggulan .card-text {
+	font-family: Poppins;
+	font-size: 14px;
+	text-align: justify;
+	line-height: 26px;
+	margin: 20px 20px;
+	opacity: 60%
+}
+
+.keunggulan .lonk {
+	color: #2EB667;
+}
+
+.keunggulan .card {
+	box-shadow: 1px 6px 10px 1px rgba(0, 0, 0, 0.2);
+}
+
+
+/* Footer */
+.footer {
+	height: 519px;
+	background-image: url(img/BG_foot.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	font-family: Poppins;
+}
+
+.footer h5 {
+	font-size: 24px;
+}
+
+.footer h5 span {
+	color: #2EB667;
+}
+
+.footer .tutup {
+	font-size: 14px;
+	margin: 30px 0 70px 0;
+}
+
+.footer i {
+	margin-right: 15px;
+}
+
+.footer .ww {
+	padding-top: 270px;
+}
+
+.footer h4 {
+	font-size: 18px;
+	margin-bottom: 30px;
+}
+
+.footer .sitemaps p {
+	font-size: 12px;
+	line-height: 20px;
+}
+
+.footer .sitemaps {
+	margin-left: 100px;
+}
+
+.footer .kontak p {
+	font-size: 12px;
+	line-height: 30px;
+}
+/* MOBILE VERSION 
