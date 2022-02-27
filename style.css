@@ -25,7 +25,7 @@
 	margin-top: 20px;
 }
 
-span, .keunggulan span {
+span {
 	display: inline;
 	color: #2EB667;
 }
@@ -132,7 +132,7 @@ span, .keunggulan span {
 
 .keunggulan .card-title {
 	font-family: Poppins;
-	font-size: 20px
+	font-size: 20px;
 	margin: 30px 0;
 }
 
