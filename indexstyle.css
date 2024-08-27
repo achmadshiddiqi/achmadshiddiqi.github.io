@@ -64,4 +64,17 @@ html {
   .portfolio .col-md {
     margin-bottom: 25px;
   }
+
+  .contact .col-md-4 {
+    margin: 0px 15px;
+  }
+
+  .contact .col-md-6 {
+    margin: 30px 15px 0px 15px;
+  }
+
+  .contact .card-text,
+  .contact .col-md-6 .send-button {
+    text-align: center;
+  }
 }
