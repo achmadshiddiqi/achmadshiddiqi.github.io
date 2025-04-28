@@ -41,14 +41,21 @@ tombolPilihan.forEach((pilihan) => {
     // Ambil pilihan komputer & player
     const pKomputer = pilihanKomputer();
     const pPlayer = pilihan.className;
-    // Ganti img komputer
-    gantiImgKomputer(pKomputer);
-    // Ambil hasilnya
-    const hasil = aturanMain(pKomputer, pPlayer);
-    // Cari area info
-    const info = document.querySelector(".area-info");
-    // Tampilkan hasilnya di info
-    info.innerHTML = hasil;
+    // Animasi acak komputer
+    const animasiAcak = setInterval(() => {
+      gantiImgKomputer(pilihanKomputer());
+    }, 50);
+    const stopAnimasi = setTimeout(() => {
+      clearInterval(animasiAcak);
+      // Ganti img komputer
+      gantiImgKomputer(pKomputer);
+      // Ambil hasilnya
+      const hasil = aturanMain(pKomputer, pPlayer);
+      // Cari area info
+      const info = document.querySelector(".area-info");
+      // Tampilkan hasilnya di info
+      info.innerHTML = hasil;
+    }, 1000);
   });
 });
 
