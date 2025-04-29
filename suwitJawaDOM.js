@@ -30,6 +30,22 @@ const gantiImgKomputer = (pilihan) => {
   }
 };
 
+// Bikin method buat hitung skor
+let skorK = 0;
+let skorP = 0;
+const hitungSkor = (hasil) => {
+  const skorKomputer = document.querySelector(".skor-komputer");
+  const skorPlayer = document.querySelector(".skor-player");
+  if (hasil === "MENANG!") {
+    skorP++;
+    return (skorPlayer.innerHTML = skorP);
+  }
+  if (hasil === "KALAH!") {
+    skorK++;
+    return (skorKomputer.innerHTML = skorK);
+  }
+};
+
 // Cari tombol
 const tombolPilihan = document.querySelectorAll("li img");
 // const orang = document.querySelector(".orang");
@@ -55,6 +71,8 @@ tombolPilihan.forEach((pilihan) => {
       const info = document.querySelector(".area-info");
       // Tampilkan hasilnya di info
       info.innerHTML = hasil;
+      // Hitung skor
+      hitungSkor(hasil);
     }, 1000);
   });
 });

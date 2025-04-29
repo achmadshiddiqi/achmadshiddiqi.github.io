@@ -152,8 +152,8 @@ h1 {
   width: 560px;
   height: 250px;
   margin: 5px 0;
-  display: flex;
   background-color: lightcoral;
+  display: flex;
   position: relative;
   border-radius: 40px 40px 0 0;
 }
@@ -221,4 +221,20 @@ li {
 .semut:active {
   top: 2px;
   box-shadow: 0 0 5px 5px darkslategray;
+}
+
+.skor-komputer,
+.skor-player {
+  width: 50px;
+  height: 20px;
+  padding-top: 5px;
+  background-color: greenyellow;
+  border: 2px solid green;
+  border-radius: 10px;
+  text-align: center;
+  font-family: "Times New Roman", Times, serif;
+  font-weight: 700;
+  position: absolute;
+  left: 10%;
+  top: 10%;
 }
