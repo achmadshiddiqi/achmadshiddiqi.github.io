@@ -7,7 +7,7 @@ inputButton.addEventListener("click", () => {
 
 // Ambil data dari api sesuai input searching
 function getDataMovies(keyword) {
-  fetch(`http://www.omdbapi.com/?apikey=3a352860&s=${keyword}`)
+  fetch(`https://www.omdbapi.com/?apikey=3a352860&s=${keyword}`)
     .then((response) => response.json())
     .then((response) => {
       const movies = response.Search;
@@ -21,7 +21,7 @@ function getDataMovies(keyword) {
       // Tampilkan detail film dengan modal
       $(".movie-detail-button").on("click", function () {
         fetch(
-          `http://www.omdbapi.com/?apikey=3a352860&i=${$(this).data("imdbid")}`
+          `https://www.omdbapi.com/?apikey=3a352860&i=${$(this).data("imdbid")}`
         )
           .then((respone) => respone.json())
           .then((movie) => {
