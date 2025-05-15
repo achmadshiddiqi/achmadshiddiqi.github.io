@@ -1,5 +1,5 @@
 section {
-  min-height: 600px;
+  min-height: 500px;
 }
 
 html {
@@ -22,10 +22,6 @@ html {
   box-shadow: 1px 5px 10px 1px rgba(0, 0, 0, 0.2);
 }
 
-.portfolio .row {
-  margin-bottom: 25px;
-}
-
 .portfolio .card-body {
   text-align: center;
   display: flex;
@@ -34,7 +30,7 @@ html {
 }
 
 .portfolio .card-body .btn {
-  width: 40%;
+  width: 50%;
 }
 
 .sosmed img {
