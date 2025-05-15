@@ -26,6 +26,17 @@ html {
   margin-bottom: 25px;
 }
 
+.portfolio .card-body {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.portfolio .card-body .btn {
+  width: 40%;
+}
+
 .sosmed img {
   width: 35px;
   height: 35px;
