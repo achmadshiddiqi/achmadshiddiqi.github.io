@@ -1,24 +1,30 @@
 // Tangkap input searching
 const inputButton = document.querySelector(".input-button");
 inputButton.addEventListener("click", async () => {
-  const searchInput = document.querySelector(".form-control");
-  const movies = await getDataMovies(searchInput.value);
-  updateUI(movies);
+  try {
+    const searchInput = document.querySelector(".form-control");
+    const movies = await getDataMovies(searchInput.value);
+    updateUI(movies);
+  } catch (error) {
+    alert(error);
+  }
 });
 
 // Ambil data dari api sesuai input searching
 function getDataMovies(keyword) {
-  return fetch(`http://www.omdbapi.com/?apikey=3a352860&s=${keyword}`)
-    .then((response) => response.json())
-    .then((response) => response.Search)
-    .catch((response) => console.log(response));
-}
-
-// Ambil data detail movie sesuai imdbid saat tombol detail diklik
-function getMovieDetail(imdbid) {
-  return fetch(`http://www.omdbapi.com/?apikey=3a352860&i=${imdbid}`)
-    .then((respone) => respone.json())
-    .then((movie) => movie);
+  return fetch(`https://www.omdbapi.com/?apikey=3a352860&s=${keyword}`)
+    .then((response) => {
+      if (!response.ok) {
+        throw new Error(response.statusText);
+      }
+      return response.json();
+    })
+    .then((response) => {
+      if (response.Response == "False") {
+        throw new Error(response.Error);
+      }
+      return response.Search;
+    });
 }
 
 // Update UI
@@ -29,22 +35,43 @@ function updateUI(movies) {
   return (movieField.innerHTML = cards);
 }
 
+// Event binding pada tombol detail
+// karena event sudah dijalankan saat detail button belum terbuat
+document.addEventListener("click", async (e) => {
+  if (e.target.classList.contains("movie-detail-button")) {
+    try {
+      const imdbid = e.target.dataset.imdbid;
+      const movieDetail = await getMovieDetail(imdbid);
+      updateUIDetail(movieDetail);
+    } catch (error) {
+      alert(error);
+    }
+  }
+});
+
+// Ambil data detail movie sesuai imdbid saat tombol detail diklik
+function getMovieDetail(imdbid) {
+  return fetch(`https://www.omdbapi.com/?apikey=3a352860&i=${imdbid}`)
+    .then((response) => {
+      if (!response.ok) {
+        throw new Error(response.statusText);
+      }
+      return response.json();
+    })
+    .then((movie) => {
+      if (movie.Response == "False") {
+        throw new Error(movie.Error);
+      }
+      return movie;
+    });
+}
+
 // Update UI Detail
 function updateUIDetail(movie) {
   let modal = modalHTML(movie);
   const detailField = document.querySelector(".detail-field");
   return (detailField.innerHTML = modal);
 }
-
-// Event binding pada tombol detail
-// karena event sudah dijalankan saat detail button belum terbuat
-document.addEventListener("click", async (e) => {
-  if (e.target.classList.contains("movie-detail-button")) {
-    const imdbid = e.target.dataset.imdbid;
-    const movieDetail = await getMovieDetail(imdbid);
-    updateUIDetail(movieDetail);
-  }
-});
 
 // Cards
 const cardHTML = (movie) => {
