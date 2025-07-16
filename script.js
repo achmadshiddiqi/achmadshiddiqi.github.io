@@ -30,6 +30,11 @@ const portfolio = [
     text: "Movie-Searching Web developed with bootstrap & javascript by fetching data from OMDb API.",
     href: "porto5/latihan-callbacks.html",
   },
+  {
+    image: "",
+    text: "Mobile-based web e-learning application developed with html and css",
+    href: "porto6/index.html",
+  },
 ];
 
 // Menampilkan Portofolio Cards

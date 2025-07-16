@@ -1,0 +1,323 @@
+/* Phone */
+@media (max-width: 575.98px) {
+  .container {
+    width: 100%;
+    height: 667px;
+  }
+
+  /* Global */
+  .home-icon img {
+    width: 50px;
+  }
+
+  h2 {
+    font-family: "Wedges";
+    color: #ffeb99;
+    paint-order: stroke fill;
+    -webkit-text-stroke-width: 10px;
+    -webkit-text-stroke-color: #bd9800;
+    margin-top: 10px;
+    padding-top: 5px;
+    font-size: 24px;
+    font-weight: 400;
+  }
+
+  h3 {
+    font-family: "Quicksand";
+    font-size: 10px;
+    font-weight: bold;
+    margin: 5px 0;
+    color: #ffeb99;
+  }
+
+  /* Page Start */
+  .page-start {
+    background-image: url("../public/img/bg-1.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  .tombol-mulai {
+    width: 150px;
+    height: 50px;
+    padding-top: 5px;
+    background-color: #fcc53a;
+    border: 0px;
+    border-radius: 10px;
+    box-shadow: 2px 4px #967b0a;
+    font-family: "Wedges";
+    font-size: 32px;
+    text-align: center;
+    text-decoration: none;
+    letter-spacing: 3px;
+    paint-order: stroke fill;
+    -webkit-text-stroke-width: 10px;
+    -webkit-text-stroke-color: #967b0a;
+    color: white;
+    top: 80%;
+    left: 30%;
+  }
+
+  .tombol-mulai:active {
+    box-shadow: none;
+    transform: translateY(4px);
+  }
+
+  /* Page Menu */
+  .page-menu {
+    background-image: url("../public/img/bg-2.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  .page-menu .menu-head {
+    padding-top: 140px;
+  }
+
+  .page-menu .menu-head h1 {
+    font-family: "Wedges";
+    color: white;
+    font-size: 60px;
+    text-shadow: 4px 4px 3px rgba(0, 0, 0, 0.32);
+    letter-spacing: 5px;
+  }
+
+  .page-menu .menu-list {
+    width: 80%;
+    margin: auto;
+    margin-top: 15px;
+    background-color: #f5c241;
+    border-radius: 15px;
+    box-shadow: 5px 5px #839b11;
+    cursor: pointer;
+  }
+
+  .page-menu .menu-list:active {
+    box-shadow: none;
+    transform: translateY(5px);
+  }
+
+  .page-menu .menu-list a {
+    text-decoration: none;
+  }
+
+  .page-menu .home-icon {
+    margin-top: 70px;
+  }
+
+  /* Page Content */
+  .page-content {
+    background-image: url("./img/bg-3.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  .page-content .content-title-row {
+    padding-top: 12px;
+  }
+
+  .page-content .content-title-row .content-title {
+    border-bottom-left-radius: 15px;
+    border-top-left-radius: 15px;
+    background-color: #839b11;
+    height: 100%;
+  }
+
+  .page-content .faring-h3 h3 {
+    font-family: "Quicksand";
+    font-size: 13px;
+    font-weight: 700;
+    color: #839b11;
+    paint-order: stroke fill;
+    -webkit-text-stroke: 1px #ffff;
+  }
+
+  .page-content .content-img {
+    margin-top: 50px;
+  }
+
+  .page-content .content-text {
+    /* margin-bottom: 90px; */
+  }
+
+  .page-content .content-text h5 {
+    padding: 5px;
+    font-family: "Quicksand";
+    font-size: 12px;
+    font-weight: bold;
+    background-color: rgba(255, 255, 255, 0.75);
+    border-radius: 5px;
+    text-align: center;
+    line-height: 20px;
+  }
+
+  .page-content .content-text h5 .context-text-title {
+    font-family: "Quicksand";
+    font-size: 11px;
+    font-weight: bold;
+    color: #ffeb99;
+    paint-order: stroke fill;
+    -webkit-text-stroke: 3px #967b0a;
+  }
+
+  .page-content .content-text p {
+    font-family: "Quicksand";
+    font-size: 12px;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 0;
+  }
+
+  .page-content .content-text h6 {
+    padding: 10px 0;
+    font-family: "Quicksand";
+    font-size: 12px;
+    font-weight: 700;
+    color: white;
+    background-color: #a5b84a;
+    border-radius: 5px;
+  }
+
+  .page-content .content-header {
+    margin-top: 50px;
+  }
+
+  .page-content .content-img-organ {
+    /* margin-bottom: 50px; */
+  }
+
+  .page-content .list-organ h4 {
+    padding: 3px;
+    border-radius: 5px;
+    font-family: "Quicksand";
+    font-size: 10px;
+    font-weight: bold;
+    color: white;
+    background-color: #ee8a91;
+  }
+
+  .page-content .list-organ .rongga-hidung {
+    left: 72%;
+    top: 25%;
+  }
+
+  .page-content .list-organ .faring {
+    left: 20%;
+    top: 35%;
+  }
+
+  .page-content .list-organ .epiglotis {
+    left: 71%;
+    top: 36%;
+  }
+
+  .page-content .list-organ .laring {
+    left: 68%;
+    top: 43%;
+  }
+
+  .page-content .list-organ .trakea {
+    left: 78%;
+    top: 49%;
+  }
+
+  .page-content .list-organ .bronkus {
+    left: 79%;
+    top: 60%;
+  }
+
+  .page-content .list-organ .paru-kanan {
+    left: 3%;
+    top: 62.5%;
+  }
+
+  .page-content .list-organ .bronkiolus {
+    left: 79%;
+    top: 65.3%;
+  }
+
+  .page-content .list-organ .alveolus {
+    left: 79%;
+    top: 70%;
+  }
+
+  .page-content .list-organ .paru-kiri {
+    left: 79%;
+    top: 75.5%;
+  }
+
+  .translate-middle-x {
+    margin-top: 50px;
+  }
+
+  .page-content .content-text .nomor-kiri {
+    width: 20px;
+    height: 20px;
+    background-color: #fcc53a;
+    border-radius: 20px;
+    margin-top: -10px;
+    margin-left: -15px;
+  }
+
+  .page-content .content-text .alveolus-text {
+    line-height: 15px;
+    font-size: 10px;
+    height: 90%;
+  }
+
+  .page-content .content-text .paru-kiri-text {
+    line-height: 14px;
+    font-size: 10px;
+    height: 100%;
+  }
+
+  .page-content .paru-kanan-img img {
+    margin-right: 20px;
+  }
+
+  .page-content .content-text .proses-napas span {
+    font-family: "Quicksand";
+    font-size: 10px;
+    color: #76620d;
+    font-weight: 700;
+    background-color: #ffeb99;
+    border-radius: 7px;
+    padding: 3px 5px;
+  }
+
+  .page-content .content-text .proses-napas h6 {
+    margin-bottom: 0;
+    margin-top: -10px;
+    font-size: 10px;
+    padding: 10px;
+  }
+
+  .page-content .gangguan-list img {
+    width: 110px;
+  }
+
+  .page-content .content-title-gangguan {
+    background-color: #839b11;
+    border-bottom-left-radius: 15px;
+    border-top-left-radius: 15px;
+    height: 25px;
+  }
+
+  .page-content .content-title-gangguan h3 {
+    margin: 3px 0;
+    line-height: 10px;
+  }
+
+  .page-content .content-text-gangguan {
+    margin-top: -375px;
+  }
+
+  .page-content .content-text-gangguan p {
+    line-height: 24px;
+    text-align: start;
+  }
+
+  .organ-set {
+    position: relative;
+  }
+}
