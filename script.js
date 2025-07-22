@@ -35,6 +35,11 @@ const portfolio = [
     text: "Mobile-based web e-learning application developed with html and css",
     href: "porto6/index.html",
   },
+  {
+    image: "img/thumbs/13.png",
+    text: "Desktop-based web catatan belanja app created with ReactJs and Vite",
+    href: "https://achmadshiddiqi.github.io/catatan-belanja/",
+  },
 ];
 
 // Menampilkan Portofolio Cards
